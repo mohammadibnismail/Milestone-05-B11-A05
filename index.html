@@ -75,6 +75,81 @@
         </nav>
     </header>
 
+    <main class="max-w-screen-2xl mx-auto">
+
+        <div class="grid grid-cols-12 gap-6">
+
+            <!-- Status Bar -->
+            <div class="bg-color-white col-span-9 rounded-2xl">
+
+                <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-6 border-dashed border-b-2 p-6">
+                    
+                    <!-- Task Counter -->
+                    <div class="flex items-center gap-3 bg-color-gray p-5 rounded-2xl">
+                        <div class="p-4 bg-color-white rounded-full">
+                            <img src="assets/checkbox.png" alt="" />
+                        </div>
+                        <div class="">
+                            <p class="text-sm">Task Assigned</p>
+                            <span id="total-task-assigned" class="text-2xl font-bold">6</span>
+                        </div>
+                    </div>
+
+                    <!-- Blog Page -->
+                    <div id="blog-page"
+                        class="col-span-2 flex justify-center items-center gap-3 bg-gradient-to-bl to-[#3752FD] from-[#9BA8F8] p-4 rounded-2xl cursor-pointer">
+                        <div class="p-1">
+                            <img src="assets/board.png" alt="" />
+                        </div>
+                        <div class="text-white text-lg">
+                            Discover Something New Today!
+                        </div>
+                    </div>
+
+                    <!-- Current Date -->
+                    <div class="flex items-center gap-3 bg-color-gray p-5 rounded-2xl">
+                        <div class="p-4 bg-color-white rounded-full">
+                            <img src="assets/calender.png" alt="" />
+                        </div>
+                        <div id="current-date" class="text-lg font-bold">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 grid lg:grid-cols-3 gap-5">
+                    <span>Task Card</span>
+                    <span>Task Card</span>
+                    <span>Task Card</span>
+                    <span>Task Card</span>
+                    <span>Task Card</span>
+                    <span>Task Card</span>
+                </div>
+            </div>
+
+            <!-- Activity Log -->
+            <div class="bg-color-white col-span-3 rounded-2xl">
+
+                <!-- Clear Activity/History Log -->
+                <div class="flex flex-col gap-4 justify-center items-center border-dashed border-b-2 p-6">
+
+                    <div class="flex justify-center items-center gap-3">
+                        <img src="./assets/activity.png" alt="" />
+                        <p class="text-xl">Activity Log</p>
+                    </div>
+                    <div id="btn-clear-history">
+                        <button class="btn btn-primary px-5 text-sm">Clear History</button>
+                    </div>
+                </div>
+
+                <!-- Show Activity/History Log -->
+                <div id="history-log" class="p-6">
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
 
     <script src="script.js"></script>
 </body>

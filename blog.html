@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+          :root {
+            --font-poppins: "Poppins", sans-serif;
+            --color-1: #FFFFFF;
+            --color-2: #F4F7FF;
+            --color-3: #3752FD;
+            --color-4: #000000;
+            --color-5: #00303C;
+          }
+        }
+
+        @layer utilities{
+            .font-poppins {
+                font-family: var(--font-poppins);
+            }
+            .text-color-black{
+                color: var(--color-5);
+            }
+            .text-color-gray{
+                color: var(--color-4);
+            }
+            .bg-color-white{
+                background-color: var(--color-1);
+            }
+            .bg-color-gray{
+                background-color: var(--color-2);
+            }
+            .bg-color-blue{
+                background-color: var(--color-3);
+            }
+        }
+        @layer components{
+            .comName{
+                @apply comStyles
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class=" max-w-screen-2xl mx-auto py-6">
+        <nav class="p-5 border rounded-2xl bg-color-white flex justify-between items-center">
+            <div class="logo flex gap-2 items-center">
+                <img class="" src="assets/logo.png" alt="" />
+                <h2 class="text-5xl">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <div>
+                <button id="home-page" class="btn btn-primary px-5 text-sm">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById("home-page").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>

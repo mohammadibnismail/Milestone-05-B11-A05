@@ -19,3 +19,19 @@ document.getElementById("bg-theme").addEventListener("click", function() {
     document.getElementById("body").style.backgroundColor = randomColor;
   });
 
+
+// Blog's Page
+document.getElementById("blog-page").addEventListener("click", function() {
+    window.location.href = "blog.html";
+  });
+
+
+// Current Date
+document.getElementById("current-date").innerText = new Date().toDateString();
+
+
+// Clear History
+document.getElementById("btn-clear-history").addEventListener("click", function() {
+    document.getElementById("history-log").innerHTML = "";
+  });
+
