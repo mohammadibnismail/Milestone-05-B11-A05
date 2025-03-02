@@ -66,7 +66,7 @@
             <div class="flex gap-5">
                 <div class="flex items-center gap-2 bg-color-gray border rounded-2xl p-3">
                     <img class="" src="assets/checkbox.png" alt="" />
-                    <span class="font-bold text-3xl">23</span>
+                    <span id="task-completed"  class="font-bold text-3xl">23</span>
                 </div>
                 <div id="bg-theme" class="flex items-center cursor-pointer p-3 bg-color-gray border rounded-full">
                     <img class="" src="assets/theme-btn.png" alt="" />
@@ -83,7 +83,7 @@
             <div class="bg-color-white col-span-9 rounded-2xl">
 
                 <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-6 border-dashed border-b-2 p-6">
-                    
+
                     <!-- Task Counter -->
                     <div class="flex items-center gap-3 bg-color-gray p-5 rounded-2xl">
                         <div class="p-4 bg-color-white rounded-full">
@@ -116,14 +116,120 @@
                     </div>
                 </div>
 
-                <div class="p-6 grid lg:grid-cols-3 gap-5">
-                    <span>Task Card</span>
-                    <span>Task Card</span>
-                    <span>Task Card</span>
-                    <span>Task Card</span>
-                    <span>Task Card</span>
-                    <span>Task Card</span>
+                <div class="p-6 grid lg:grid-cols-3 gap-6">
+
+                    <!-- Card 1 -->
+                    <div class="card bg-color-gray p-6 rounded-2xl">
+                        <div class=" border-b border-dashed pb-6 mb-6">
+                            <span class="bg-color-white px-4 py-2 rounded-xl">ShopEase</span>
+                            <h2 class="task-title my-5 text-xl font-bold text-gray-900">Fix Mobile Button Issue</h2>
+                            <div class="bg-color-white p-4 rounded-xl mt-3 text-gray-400 text-sm ">
+                                Debug using Chrome DevTools, check for overlapping elements,and ensure onClick works properly and ensure onClick works properly
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div class="deadline">
+                                <p class="text-gray-500 text-sm">Deadline</p>
+                                <p class="font-semibold text-gray-900">21 March 2025</p>
+                            </div>
+                            <button class="px-4 bg-color-blue bg-gray-200 text-white py-2 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card bg-color-gray p-6 rounded-2xl">
+                        <div class=" border-b border-dashed pb-6 mb-6">
+                            <span class="bg-color-white px-4 py-2 rounded-xl">CloudSync</span>
+                            <h2 class="task-title my-5 text-xl font-bold text-gray-900">Add Dark Mode</h2>
+                            <div class="bg-color-white p-4 rounded-xl mt-3 text-gray-400 text-sm">
+                                Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div class="deadline">
+                                <p class="text-gray-500 text-sm">Deadline</p>
+                                <p class="font-semibold text-gray-900">21 March 2025</p>
+                            </div>
+                            <button class="px-4 bg-color-blue bg-gray-200 text-white py-2 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card bg-color-gray p-6 rounded-2xl">
+                        <div class=" border-b border-dashed pb-6 mb-6">
+                            <span class="bg-color-white px-4 py-2 rounded-xl">SwiftPay</span>
+                            <h2 class="task-title my-5 text-xl font-bold text-gray-900">Optimize  Home page</h2>
+                            <div class="bg-color-white p-4 rounded-xl mt-3 text-gray-400 text-sm">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div class="deadline">
+                                <p class="text-gray-500 text-sm">Deadline</p>
+                                <p class="font-semibold text-gray-900">21 March 2025</p>
+                            </div>
+                            <button class="px-4 bg-color-blue bg-gray-200 text-white py-2 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card bg-color-gray p-6 rounded-2xl">
+                        <div class=" border-b border-dashed pb-6 mb-6">
+                            <span class="bg-color-white px-4 py-2 rounded-xl">Meta</span>
+                            <h2 class="task-title my-5 text-xl font-bold text-gray-900">Add new emoji 🤲</h2>
+                            <div class="bg-color-white p-4 rounded-xl mt-3 text-gray-400 text-sm">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div class="deadline">
+                                <p class="text-gray-500 text-sm">Deadline</p>
+                                <p class="font-semibold text-gray-900">21 March 2025</p>
+                            </div>
+                            <button class="px-4 bg-color-blue bg-gray-200 text-white py-2 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card bg-color-gray p-6 rounded-2xl">
+                        <div class=" border-b border-dashed pb-6 mb-6">
+                            <span class="bg-color-white px-4 py-2 rounded-xl">Google LLC</span>
+                            <h2 class="task-title my-5 text-xl font-bold text-gray-900">Integrate OpenAI API</h2>
+                            <div class="bg-color-white p-4 rounded-xl mt-3 text-gray-400 text-sm">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div class="deadline">
+                                <p class="text-gray-500 text-sm">Deadline</p>
+                                <p class="font-semibold text-gray-900">21 March 2025</p>
+                            </div>
+                            <button class="px-4 bg-color-blue bg-gray-200 text-white py-2 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="card bg-color-gray p-6 rounded-2xl">
+                        <div class=" border-b border-dashed pb-6 mb-6">
+                            <span class="bg-color-white px-4 py-2 rounded-xl">Glassdoar</span>
+                            <h2 class="task-title my-5 text-xl font-bold text-gray-900">Improve Job searching</h2>
+                            <div class="bg-color-white p-4 rounded-xl mt-3 text-gray-400 text-sm">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <div class="deadline">
+                                <p class="text-gray-500 text-sm">Deadline</p>
+                                <p class="font-semibold text-gray-900">21 March 2025</p>
+                            </div>
+                            <button class="px-4 bg-color-blue bg-gray-200 text-white py-2 rounded-xl">Completed</button>
+                        </div>
+                    </div>
+
+
                 </div>
+
+
             </div>
 
             <!-- Activity Log -->
