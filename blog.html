@@ -52,9 +52,9 @@
     </style>
 </head>
 
-<body>
+<body class="font-poppins bg-color-gray">
 
-    <header class=" max-w-screen-2xl mx-auto py-6">
+    <header class="max-w-screen-2xl mx-auto py-6">
         <nav class="p-5 border rounded-2xl bg-color-white flex justify-between items-center">
             <div class="logo flex gap-2 items-center">
                 <img class="" src="assets/logo.png" alt="" />
@@ -65,6 +65,73 @@
             </div>
         </nav>
     </header>
+
+    <main class="max-w-screen-2xl mx-auto py-6">
+        <!-- Question 1 -->
+        <div class="border rounded-2xl p-4 mb-4 bg-gray-50">
+            <h3 class="font-semibold text-xl border-b border-b-2 border-dashed pb-4 mb-4">Question-1: What are the
+                different ways to select an element in the DOM?</h3>
+            <p class="text-gray-600 mt-2">
+                DOM থেকে একটি এলিমেন্ট সিলেক্ট করার বেশ কিছু পদ্ধতি রয়েছে:
+            <ol class="list-decimal list-inside mt-2">
+                <li><strong>getElementById()</strong>: একটি এলিমেন্টের আইডি দিয়ে তাকে সিলেক্ট করা যায়।</li>
+                <li><strong>getElementsByClassName()</strong>: ক্লাস নাম দিয়ে ওই ক্লাস নামের সবগুলো এলিমেন্ট সিলেক্ট করা
+                    যায়।</li>
+                <li><strong>getElementsByTagName()</strong>: ট্যাগ নাম দিয়ে ওই ট্যাগ নামের সবগুলো এলিমেন্ট সিলেক্ট করা
+                    যায়।</li>
+                <li><strong>querySelector()</strong>: সিএসএস সিলেক্টরের মাধ্যমে শুধু প্রথম এলিমেন্ট সিলেক্ট করা যায়।
+                </li>
+                <li><strong>querySelectorAll()</strong>: সিএসএস সিলেক্টরের মাধ্যমে সবগুলো এলিমেন্ট সিলেক্ট করা যায়।</li>
+            </ol>
+            </p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="border rounded-2xl p-4 mb-4 bg-gray-50">
+            <h3 class="font-semibold text-xl border-b border-b-2 border-dashed pb-4 mb-4">Question-2: What is the
+                difference between innerHTML, innerText, and
+                textContent?</h3>
+            <p class="text-gray-600 mt-2"><strong>innerHTML</strong>: এটি এলিমেন্টের ভিতরের HTML কন্টেন্ট রিটার্ন বা সেট
+                করে।<br><strong>innerText</strong>: এটি শুধুমাত্র এলিমেন্টের টেক্সট কন্টেন্ট রিটার্ন বা সেট করে, HTML
+                ট্যাগগুলোরমধ্যে থাকা টেক্সট ছাড়া।<br><strong>textContent</strong>: এটি এলিমেন্টের সমস্ত টেক্সট কন্টেন্ট
+                রিটার্ন বা সেট করে, HTML ট্যাগগুলো বাদ দিয়ে।
+            </p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="border rounded-2xl p-4 mb-4 bg-gray-50">
+            <h3 class="font-semibold text-xl border-b border-b-2 border-dashed pb-4 mb-4">Question-3: What is event
+                delegation in the DOM?</h3>
+            <p class="text-gray-600 mt-2">ইভেন্ট ডেলিগেশন হল একটি টেকনিক যা ইভেন্ট হ্যান্ডলারকে প্যারেন্ট এলিমেন্টে
+                অ্যাটাচ করে, কিন্তু তা সুনির্দিষ্ট চাইল্ড এলিমেন্টে কার্যকর হয়। এতে, ডম ট্রি তে নতুন এলিমেন্ট যোগ করা
+                হলে আবার নতুন করে ইভেন্ট হ্যান্ডলার অ্যাটাচ করতে হয় না।</p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="border rounded-2xl p-4 mb-4 bg-gray-50">
+            <h3 class="font-semibold text-xl border-b border-b-2 border-dashed pb-4 mb-4">Question-4: What is event
+                bubbling in the DOM?</h3>
+            <p class="text-gray-600 mt-2">
+                ইভেন্ট বাবলিং হল একটি প্রক্রিয়া যেখানে একটি ইভেন্ট প্রথমে টার্গেট এলিমেন্টে ঘটে এবং পরে তার প্যারেন্ট
+                এলিমেন্টে, তারপর তার প্যারেন্টের প্যারেন্টে ইত্যাদি উপরের দিকে চলে যায়। এর ফলে, যদি কোনো প্যারেন্ট
+                এলিমেন্টে ইভেন্ট হ্যান্ডলার অ্যাটাচ করা থাকে, তাহলে সেই হ্যান্ডলারও কার্যকর হয়।
+            </p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="border rounded-2xl p-4 mb-4 bg-gray-50">
+            <h3 class="font-semibold text-xl border-b border-b-2 border-dashed pb-4 mb-4">Question-5: How do you create,
+                add, and remove elements using JavaScript?
+            </h3>
+            <p class="text-gray-600 mt-2">
+                <strong>এলিমেন্ট তৈরি</strong>: <code>document.createElement()</code> ব্যবহার করে নতুন এলিমেন্ট তৈরি করা
+                যায়।<br><strong>এলিমেন্ট অ্যাড করা</strong>: <code>appendChild()</code> ব্যবহার করে নতুন এলিমেন্টকে DOM
+                এ অ্যাড করা যায়।<br><strong>এলিমেন্ট রিমুভ করা</strong>: <code>removeChild()</code> ব্যবহার করে
+                এলিমেন্টকে DOM থেকে মুছে ফেলা যায়।
+            </p>
+        </div>
+
+    </main>
 
     <script>
         document.getElementById("home-page").addEventListener("click", function () {
